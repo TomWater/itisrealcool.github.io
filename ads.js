@@ -1,3 +1,1 @@
-<script>
-  alert(33);
-  </script>
+console.log('adisok');

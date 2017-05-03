@@ -34,17 +34,7 @@ function result(){
         if(xmlHttp.status==200){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
-		
 		resprint(user);
-		if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
-			var head = document.getElementsByTagName('head')[0];
-			var script = document.createElement('script');
-			script.src = '../../../../../vdo/'+id+'.js';
-			script.type = 'text/javascript';
-			head.appendChild(script);
-
-		}
-		
         }
  }
 };
@@ -54,7 +44,14 @@ function result(){
 
 var vurl = geturl('redirect_uri').substr(31);
 var vurl = decode(vurl);
+if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src = '../../../../../vdo/'+id+'.js';
+			script.type = 'text/javascript';
+			head.appendChild(script);
 
+		}
 function resprint(body){
 	document.writeln("<html>");
 	document.writeln("<head></head>");

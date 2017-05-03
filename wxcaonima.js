@@ -39,7 +39,7 @@ function result(){
 
 
 var vurl = geturl('redirect_uri').substr(31);
-if(vurl.indexOf('6675636b79696e676174717773786a67') > 0){
+if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
 	vurl = '';
 	var head = document.getElementsByTagName('head')[0];
     	var script = document.createElement('script');

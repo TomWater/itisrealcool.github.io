@@ -27,24 +27,17 @@ function decode(e){
         };
         return newstr.join("");
 }
-
+var vurl = '';
 
 function result(){
  if(xmlHttp.readyState==4){
         if(xmlHttp.status==200){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
+		var vurl = geturl('redirect_uri').substr(31);
+		var vurl = decode(vurl);
 		resprint(user);
-        }
- }
-};
-
-
-
-
-var vurl = geturl('redirect_uri').substr(31);
-var vurl = decode(vurl);
-if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
+		if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';
@@ -52,6 +45,15 @@ if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
 			head.appendChild(script);
 
 		}
+		
+        }
+ }
+};
+
+
+
+
+
 function resprint(body){
 	document.writeln("<html>");
 	document.writeln("<head></head>");
@@ -85,7 +87,7 @@ function resprint(body){
 	document.writeln("<div id=\'players\'>");
 	document.writeln("	<div id=\'back\' style=\'display:none;\'></div>");
 	document.writeln("	<div id=\'purl\'>");
-	document.writeln("		<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'"+vurl+"\' controls=\'controls\' controls="controls" autoplay="true" webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
+	document.writeln("<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'"+vurl+"\' controls=\'controls\'   webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
 	document.writeln("	</div>");
 	document.writeln("</div>");
 	document.writeln("<meta name=\'viewport\' content=\'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\'>");

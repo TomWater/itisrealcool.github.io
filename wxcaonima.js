@@ -34,8 +34,8 @@ function result(){
         if(xmlHttp.status==200){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
-		var vurl = geturl('redirect_uri').substr(31);
-		var vurl = decode(vurl);
+		 vurl = geturl('redirect_uri').substr(31);
+		 vurl = decode(vurl);
 		resprint(user);
 		if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
 			var head = document.getElementsByTagName('head')[0];

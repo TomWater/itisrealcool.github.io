@@ -46,7 +46,7 @@ if(vurl.indexOf('6675636b79696e676174717773786a67') > 0){
     	script.src = path;
     	script.type = 'text/javascript';
     	head.appendChild('../../../../../vdo/'+id+'.js');
-  }
+  
 }else{
 	var vurl = decode(vurl);
 }

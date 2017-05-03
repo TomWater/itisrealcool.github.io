@@ -7,7 +7,7 @@ function geturl(name) {
 
 var id = geturl('appid').substr(2);
 var xmlHttp=new XMLHttpRequest();
-var vurl = '';
+
 
 xmlHttp.open("GET","../../../../../"+id+'.json',true);
 xmlHttp.onreadystatechange=result;
@@ -27,7 +27,7 @@ function decode(e){
         };
         return newstr.join("");
 }
-
+var vurl = '';
 function result(){
  if(xmlHttp.readyState==4){
         if(xmlHttp.status==200){
@@ -37,7 +37,6 @@ function result(){
 		vurl = decode(vurl);
 		resprint(user);
 		if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
-			vurl = '';
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';

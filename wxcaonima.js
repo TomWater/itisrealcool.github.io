@@ -28,9 +28,9 @@ function decode(e){
 }
 
 function result(){
- if(xmlHttp.readyState==4){//ÏìÓ¦Íê±Ïºó
-        if(xmlHttp.status==200){//http×´Ì¬ÂëÎª200Ê±
-		var results=xmlHttp.responseText;//»ñÈ¡ajaxÇëÇóµÄÎÄ±¾ÄÚÈÝ
+ if(xmlHttp.readyState==4){
+        if(xmlHttp.status==200){
+		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
 		resprint(user);
         }

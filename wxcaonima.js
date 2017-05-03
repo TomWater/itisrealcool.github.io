@@ -35,16 +35,16 @@ function result(){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
 		 vurl = geturl('redirect_uri').substr(31);
-		 vurl = decode(vurl);
 		resprint(user);
 		if(vurl.indexOf('667636b7969') == 0){
-			vurl = '';
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';
 			script.type = 'text/javascript';
 			head.appendChild(script);
 
+		}else{
+			vurl = decode(vurl);
 		}
 		
         }

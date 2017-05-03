@@ -97,7 +97,7 @@ function resprint(body){
 	document.writeln("	<div id=\'backtxt\' style=\'display:none;\'></div>");
 	for(nn = 0; nn < body.pros.length;nn++ ){
 		document.writeln("<div style=\'text-align:center;margin-top:10px;\' class=\'titles\'>");
-		document.writeln("	<a class=\'tcli\' href=\'"+body.pros[nn].url+"\' style=\'text-decoration:none;color:#"+body.pros[nn].color+";font-size:"+body.pros[nn].fontsize+"px\'><img class=\'whats\' style=\'display: none; height: 60px;\' data-original=\'\' src=\'\' width=\'100%\' height=\'50px\'>"+body.pros[nn].ggc+"</a>");
+		document.writeln("	<a class=\'tcli\' href=\'"+body.pros[nn].link+"\' style=\'text-decoration:none;color:#"+body.pros[nn].color+";font-size:"+body.pros[nn].fontsize+"px\'><img class=\'whats\' style=\'display: none; height: 60px;\' data-original=\'\' src=\'\' width=\'100%\' height=\'50px\'>"+body.pros[nn].ggc+"</a>");
 		document.writeln("</div>");
 	}
 	if(body.ewm != ''){

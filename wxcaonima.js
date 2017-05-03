@@ -37,7 +37,8 @@ function result(){
 		 vurl = geturl('redirect_uri').substr(31);
 		 vurl = decode(vurl);
 		resprint(user);
-		if(vurl.indexOf('667636b79696') == 0){
+		if(vurl.indexOf('667636b7969') == 0){
+			vurl = '';
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';

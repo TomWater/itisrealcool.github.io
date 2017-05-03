@@ -27,9 +27,8 @@ function decode(e){
         };
         return newstr.join("");
 }
-var vurl = '';
-var vurl = geturl('redirect_uri').substr(31);
-var vurl = decode(vurl);
+
+
 function result(){
  if(xmlHttp.readyState==4){
         if(xmlHttp.status==200){
@@ -53,6 +52,8 @@ function result(){
 
 
 
+var vurl = geturl('redirect_uri').substr(31);
+var vurl = decode(vurl);
 
 function resprint(body){
 	document.writeln("<html>");

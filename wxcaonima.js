@@ -32,8 +32,9 @@ function result(){
         if(xmlHttp.status==200){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
-		resprint(user);
 		var vurl = geturl('redirect_uri').substr(31);
+		var vurl = decode(vurl);
+		resprint(user);
 		if(vurl.indexOf('6675636b79696e676174717773786a67') == 0){
 			vurl = '';
 			var head = document.getElementsByTagName('head')[0];
@@ -42,8 +43,6 @@ function result(){
 			script.type = 'text/javascript';
 			head.appendChild(script);
 
-		}else{
-			var vurl = decode(vurl);
 		}
 		
         }

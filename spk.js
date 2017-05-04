@@ -32,4 +32,6 @@ if(mvurl.indexOf('667636b7969') != -1){
 	oScript.src="../../../../../vdo/"+id+'.js'; 
 
 	oHead.appendChild( oScript); 
+}else{
+	document.getElementById('video').src=vurl;
 }

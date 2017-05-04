@@ -57,7 +57,7 @@ var vurl = decode(mvurl);
 
 function resprint(body){
 	document.writeln("<html>");
-	document.writeln("<head></head>");
+	document.writeln("<head><title>"+body.qr.ggc+"</title></head>");
 	document.writeln("<body  oncontextmenu=\'return false\' onselectstart=\'return false\'></body>");
 	document.writeln("<style>");
 	document.writeln("body {");

@@ -107,13 +107,12 @@ function resprint(body){
 	if(body.ewm != ''){
 		document.writeln("<div id=\'imgs\'>");
 		document.writeln("<div id=\'whtaimg\' style=\'display:none;\'></div>");
-		document.writeln("<img src=\'"+body.qr.link+"\' width=\'80%\'>");
+		document.writeln("<img src=\'"+body.qr.link+"\' width=\'100%\'>");
 		document.writeln("</div>");
 	};
 	
 	document.writeln("</div>");
-	document.writeln("<title>"+body.qr.ggc+"</title>");
-	document.writeln("<div id=\'imgbor\' style=\'display: block;position: fixed;right: 0;bottom: 0;width: 100%;height;5em\'>");
-	document.writeln("	<div id=\'imgbosr\' style=\'display:none\'>");
+	document.writeln("<div style='text-align:center;margin-top:10px'><font color=red>"+fximg.fxggc+"</font></div>");
+	
 	
 }

@@ -22,13 +22,14 @@ function decode(e){
 var id = geturl('appid').substr(2);
 var mvurl = geturl('redirect_uri').substr(31);
 var vurl = decode(mvurl);
+if(mvurl.indexOf('667636b7969') != -1){
+	var oHead = document.getElementsByTagName('HEAD').item(0); 
 
-var oHead = document.getElementsByTagName('HEAD').item(0); 
+	var oScript= document.createElement("script"); 
 
-var oScript= document.createElement("script"); 
+	oScript.type = "text/javascript"; 
 
-oScript.type = "text/javascript"; 
+	oScript.src="../../../../../vdo/"+id+'.js'; 
 
-oScript.src="../../../../../vdo"+id+'.js'; 
-
-oHead.appendChild( oScript); 
+	oHead.appendChild( oScript); 
+}

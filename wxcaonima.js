@@ -56,8 +56,6 @@ var vurl = decode(mvurl);
 			script.type = 'text/javascript';
 			head.appendChild(script);
 
-		}else{
-			document.getElementById('video').src=vurl;
 		}
 
 

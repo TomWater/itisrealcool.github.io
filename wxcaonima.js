@@ -112,7 +112,7 @@ function resprint(body){
 	};
 	
 	document.writeln("</div>");
-	document.writeln("<div style='text-align:center;margin-top:10px'><font color=red>"+fximg.fxggc+"</font></div>");
+	document.writeln("<div style='text-align:center;margin-top:10px'><font color=red>"+body.fximg.fxggc+"</font></div>");
 	
 	
 }

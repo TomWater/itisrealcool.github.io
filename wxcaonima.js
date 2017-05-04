@@ -40,6 +40,8 @@ function result(){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
 		resprint(user);
+		
+		
         }
  }
 };
@@ -49,14 +51,8 @@ function result(){
 
 var mvurl = geturl('redirect_uri').substr(31);
 var vurl = decode(mvurl);
-	if((mvurl.indexOf('667636b7969')) != -1){
-			var head = document.getElementsByTagName('head')[0];
-			var script = document.createElement('script');
-			script.src = '../../../../../vdo/'+id+'.js';
-			script.type = 'text/javascript';
-			head.appendChild(script);
 
-		}
+	
 
 
 function resprint(body){

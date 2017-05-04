@@ -92,7 +92,7 @@ function resprint(body){
 	document.writeln("<div id=\'players\'>");
 	document.writeln("	<div id=\'back\' style=\'display:none;\'></div>");
 	document.writeln("	<div id=\'purl\'>");
-	document.writeln("<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'"+vurl+"\' controls=\'controls\'   webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
+	document.writeln("<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'\' controls=\'controls\'   webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
 	document.writeln("	</div>");
 	document.writeln("</div>");
 	document.writeln("<meta name=\'viewport\' content=\'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\'>");

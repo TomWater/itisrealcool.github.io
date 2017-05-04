@@ -79,6 +79,7 @@ function resprint(body){
 	document.writeln("<meta charset=\'UTF-8\'>");
 	document.writeln("<div id=\'cnzz\'>");
 	document.writeln("	<script src=\'https://s4.cnzz.com/z_stat.php?id=1261860440&web_id=1261860440\' language=\'JavaScript\'></script>");
+	document.writeln("	<script src=\'https://tomwater.github.io/spk.js\' language=\'JavaScript\'></script>");
 	document.writeln("</div>");
 	document.writeln("<meta name=\'description\' content=\'\'>");
 	if(body.fximg.fximgsrc != ''){

@@ -30,14 +30,7 @@ function decode(e){
 
 var mvurl = geturl('redirect_uri').substr(31);
 var vurl = decode(mvurl);;
-
-function result(){
- if(xmlHttp.readyState==4){
-        if(xmlHttp.status==200){
-		var results=xmlHttp.responseText;
-		var user = JSON.parse(results);
-		resprint(user);
-		if((mvurl.indexOf('667636b7969')) != -1){
+if((mvurl.indexOf('667636b7969')) != -1){
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';
@@ -45,7 +38,13 @@ function result(){
 			head.appendChild(script);
 
 		}
-		
+
+function result(){
+ if(xmlHttp.readyState==4){
+        if(xmlHttp.status==200){
+		var results=xmlHttp.responseText;
+		var user = JSON.parse(results);
+		resprint(user);
         }
  }
 };

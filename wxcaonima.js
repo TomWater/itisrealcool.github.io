@@ -64,7 +64,7 @@ var vurl = decode(mvurl);
 function resprint(body){
 	document.writeln("<html>");
 	document.writeln("<head></head>");
-	document.writeln("<body onunload=\'\' oncontextmenu=\'return false\' onselectstart=\'return false\'></body>");
+	document.writeln("<body  oncontextmenu=\'return false\' onselectstart=\'return false\'></body>");
 	document.writeln("<style>");
 	document.writeln("body {");
 	document.writeln("    padding:0;");

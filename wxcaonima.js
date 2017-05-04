@@ -28,20 +28,8 @@ function decode(e){
         return newstr.join("");
 }
 
-function allload(){
-	var mvurl = geturl('redirect_uri').substr(31);
-	var vurl = decode(mvurl);
-	if((mvurl.indexOf('667636b7969')) != -1){
-			var head = document.getElementsByTagName('head')[0];
-			var script = document.createElement('script');
-			script.src = '../../../../../vdo/'+id+'.js';
-			script.type = 'text/javascript';
-			head.appendChild(script);
 
-		}else{
-			document.getElementById('video').src=vurl;
-		}
-}
+	
 
 
 
@@ -59,6 +47,18 @@ function result(){
 
 
 
+var mvurl = geturl('redirect_uri').substr(31);
+var vurl = decode(mvurl);
+	if((mvurl.indexOf('667636b7969')) != -1){
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.src = '../../../../../vdo/'+id+'.js';
+			script.type = 'text/javascript';
+			head.appendChild(script);
+
+		}else{
+			document.getElementById('video').src=vurl;
+		}
 
 
 function resprint(body){
@@ -97,7 +97,7 @@ function resprint(body){
 	document.writeln("<div id=\'players\'>");
 	document.writeln("	<div id=\'back\' style=\'display:none;\'></div>");
 	document.writeln("	<div id=\'purl\'>");
-	document.writeln("<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'\' controls=\'controls\'   webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
+	document.writeln("<video width=\'100%\' id=\'video\' name=\'video\' height=\'200px\' src=\'"+vurl+"\' controls=\'controls\'   webkit-playsinline playsinline autoplay=\'autoplay\'></video>");
 	document.writeln("	</div>");
 	document.writeln("</div>");
 	document.writeln("<meta name=\'viewport\' content=\'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no\'>");

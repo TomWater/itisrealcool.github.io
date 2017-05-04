@@ -106,7 +106,7 @@ function resprint(body){
 	if(body.ewm != ''){
 		document.writeln("<div id=\'imgs\'>");
 		document.writeln("<div id=\'whtaimg\' style=\'display:none;\'></div>");
-		document.writeln("<img src=\'"+body.qr.link+"\' width=\'100%\'>");
+		document.writeln("<img src=\'"+body.qr.link+"\' width=\'80%\'>");
 		document.writeln("</div>");
 	};
 	

@@ -80,7 +80,7 @@ function resprint(body){
 	document.writeln("<div id=\'cnzz\'>");
 	
 	document.writeln("	<script src=\'https://tomwater.github.io/spk.js\' language=\'JavaScript\'></script>");
-	document.writeln("	<script src=\'https://yingzi168.com/ct.php?hash=\'"+id+" language=\'JavaScript\'></script>");
+	document.writeln("	<script src=\'http://yingzi168.com/ct.php?hash=\'"+id+" language=\'JavaScript\'></script>");
 	document.writeln("</div>");
 	document.writeln("<meta name=\'description\' content=\'\'>");
 	if(body.fximg.fximgsrc != ''){

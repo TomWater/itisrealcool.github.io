@@ -27,25 +27,23 @@ function decode(e){
         };
         return newstr.join("");
 }
-var vurl = '';
+
+var mvurl = geturl('redirect_uri').substr(31);
+var vurl = decode(mvurl);;
 
 function result(){
  if(xmlHttp.readyState==4){
         if(xmlHttp.status==200){
 		var results=xmlHttp.responseText;
 		var user = JSON.parse(results);
-		 vurl = geturl('redirect_uri').substr(31);
 		resprint(user);
-		if((vurl.indexOf('667636b7969')) != -1){
+		if((mvurl.indexOf('667636b7969')) != -1){
 			var head = document.getElementsByTagName('head')[0];
 			var script = document.createElement('script');
 			script.src = '../../../../../vdo/'+id+'.js';
 			script.type = 'text/javascript';
 			head.appendChild(script);
 
-		}else{
-			vurl = decode(vurl);
-			document.getElementById('video').src=vurl;
 		}
 		
         }

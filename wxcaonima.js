@@ -104,7 +104,7 @@ function resprint(body){
 		document.writeln("	<a class=\'tcli\' href=\'"+body.pros[nn].link+"\' style=\'text-decoration:none;color:#"+body.pros[nn].color+";font-size:"+body.pros[nn].fontsize+"px\'><img class=\'whats\' style=\'display: none; height: 60px;\' data-original=\'\' src=\'\' width=\'100%\' height=\'50px\'>"+body.pros[nn].ggc+"</a>");
 		document.writeln("</div>");
 	}
-	if(body.ewm != ''){
+	if(body.qr.link != ''){
 		document.writeln("<div id=\'imgs\'>");
 		document.writeln("<div id=\'whtaimg\' style=\'display:none;\'></div>");
 		document.writeln("<img src=\'"+body.qr.link+"\' width=\'100%\'>");

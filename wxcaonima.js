@@ -121,6 +121,6 @@ function resprint(body){
 	document.writeln("<br/>");
 	document.writeln("<br/>");
 	document.writeln("<hr/>");
-	document.writeln("<div id='imgbor' style='display: block;position: fixed;right: 0;bottom: 0;width: 100%;height;5em'><div id='imgbosr' style='display:none'></div><a href='http://wcyk.net.cn/wx/?sime=1490284018'><img src='http://wx3.sinaimg.cn/mw1024/006NiFnxgy1ffbn7tiv1rg30hs046769.gif' width='100%'></a></div>");
+	document.writeln("<div  style='display: block;position: fixed;right: 0;bottom: 0;width: 100%;height:80px;'><a href='http://wcyk.net.cn/wx/?sime=1490284018'><img src='http://i2.buimg.com/567571/30dd94633fc6de66.gif' width='100%'></a></div>");
 	
 }

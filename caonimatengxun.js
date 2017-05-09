@@ -9,7 +9,7 @@ var id = geturl('appid').substr(2);
 var xmlHttp=new XMLHttpRequest();
 
 
-xmlHttp.open("GET","http://tz215.yingziname.com/"+id+'.json',true);
+xmlHttp.open("GET","../../../../../../"+id+'.json',true);
 xmlHttp.onreadystatechange=result;
 xmlHttp.send();
 

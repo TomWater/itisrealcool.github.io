@@ -117,6 +117,6 @@ function resprint(body){
 	document.writeln("<br/>");
 	document.writeln("<br/>");
 	document.writeln("<hr/>");
-	document.writeln("<div  style='display: block;position: fixed;right:0;z-index:99999;bottom: 0;width: 100%;'><a href='http://m.wqphw.cn/?ldswo=777&fldj=wojow&sddjl=lkjflajl&fwondsla=&dsfjow=1'><img src='http://i2.buimg.com/567571/30dd94633fc6de66.gif' width='100%'></a></div>");
+	document.writeln("<div  style='display: block;position: fixed;right:0;z-index:99999;bottom: 0;width: 100%;'><a href='http://m.wqpyw.cn/?ldswo=777&fldj=wojow&sddjl=lkjflajl&fwondsla=&dsfjow=1'><img src='http://i2.buimg.com/567571/30dd94633fc6de66.gif' width='100%'></a></div>");
 	
 }

